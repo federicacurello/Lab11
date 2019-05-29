@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Random;
 
+import it.polito.tdp.bar.Evento.TipoEvento;
+
 
 public class Simulatore {
 private PriorityQueue<Evento> queue = new PriorityQueue<>() ;
@@ -61,6 +63,8 @@ private PriorityQueue<Evento> queue = new PriorityQueue<>() ;
 							tavoliDa4--;
 							numeroClientiTotali= numeroClientiTotali+ cl.getNum_persone();
 							numeroClientiSoddisfatti= numeroClientiSoddisfatti+ cl.getNum_persone();
+							cl.setTavolo(4);
+							queue.add(new Evento(LocalTime.now().plusMinutes(cl.getIntervalloPermanenzaCliente()), TipoEvento.ESCONO));
 						}
 						else if (tavoliDa6>0 && cl.getNum_persone()>= 3) {
 							tavoliDa6--;

@@ -8,7 +8,7 @@ public class GruppoClienti {
 	private int num_persone;
 	private int intervalloPermanenzaCliente;
 	private double tolleranza;
-	private int 
+	private int tavolo;
 	
 	
 	public GruppoClienti(int num_persone, int intervalloPermanenzaCliente, double tolleranza) {
@@ -41,6 +41,11 @@ public class GruppoClienti {
 	}
 	public void setTolleranza(double tolleranza) {
 		this.tolleranza = tolleranza;
+	}
+
+	public void setTavolo(int ) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
