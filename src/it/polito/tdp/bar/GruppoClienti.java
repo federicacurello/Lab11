@@ -43,9 +43,18 @@ public class GruppoClienti {
 		this.tolleranza = tolleranza;
 	}
 
-	public void setTavolo(int ) {
-		// TODO Auto-generated method stub
+	public void setTavolo(int num ) {
+		tavolo= num;
 		
+	}
+
+	public int getTavolo() {
+		return tavolo;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("GruppoClienti [num_persone=%s al tavolo=%s]", num_persone, tavolo);
 	}
 
 	
